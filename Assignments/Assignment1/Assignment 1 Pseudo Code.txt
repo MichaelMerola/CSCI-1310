@@ -1,0 +1,132 @@
+USCensus()
+{
+
+	double population = 307357870;
+	double year = 31536000; // amount of seconds in a year
+
+	double birthsPerYear = year / 7;
+	double deathsPerYear = year / 13;
+	double immigrantsPerYear = year / 35;
+
+	double newPopulation = ((population - deathsPerYear)+ (birthsPerYear + immigrantsPerYear);
+
+	output("The population in one year will be " + newPopulation)
+
+} // end problem one
+
+Time()
+{
+	int currentTime ;
+	int minutes;
+	int hours;
+	int seconds;
+	int rem;
+
+	currentTime = input("Enter time in seconds between 0 and 86400");
+
+	hours = currentTime/3600;
+	rem = currentTime%3600;
+
+	if (rem >= 60)
+		minutes = rem/60;
+		seconds = rem%60;
+	else
+		seconds = rem;
+	
+	output("The time is " + hours + "hours, " + minutes + "minutes, and " + seconds + "seconds!");
+
+}
+
+CelsiusConversion()
+{
+	double degreesF = input("Enter a temperature in Farenheit: ");
+	
+	double degreesC;
+	degreesC = (degreesF - 32) * (5/9);
+	
+	output("The temperature in celsius is " + degreesC + " degrees!");
+
+}
+
+ValidNumber()
+{
+	int number = input("Enter a number between 1 and 10: ");
+	
+	while (number < 1 OR number > )
+	{
+		number = input("INVALID! Enter a number between 1 and 10");
+	
+	}
+
+	output("Your number is " + number);
+}
+
+MPG()
+{
+	int mpg = input("Enter your the miles per gallon of your car: ");
+	
+	if (mpg >= 30)
+		output("Hey nice job!")
+		
+	elseif (mpg < 30 && mpg >= 15)
+		output("Decent, could be better")
+	
+	elseif (mpg < 15)
+		output("That's horrible!")
+
+}
+
+AdventureGame()
+{
+	int input;
+	
+	while (input != 3)
+	{
+		input = input("Adventure! Choose an option: \n1. Fight the Dragon \n2. Save the Princess \n3. Go Home");
+		
+		if (input == 1)
+			output("You win!");
+			
+		elseif (input == 2)
+			output("You saved her!");
+			
+		elseif (input == 3)
+			output("You lose..");
+	}
+	
+	output("Game Over");
+
+}
+
+TreasureHunt()
+{
+	posX = 0;
+	posY = 0;
+	
+	string currentTile;
+
+	while (currentTile != "yellow")
+	{
+		currentTile = getTileColor(posX, posY);
+		
+		if (currentTile == "white")
+			posY += 1;
+			
+		elseif (currentTile == "blue")
+			posX -= 1;
+		
+		elseif (currentTile == "green")
+			posX += 1;
+			
+		elseif (currentTile == "black")
+			posY -= 2;
+			
+		elseif (currentTile == "yellow")
+			output("You Win!");
+	}
+	
+	output("Game Over");
+	
+}
+
+

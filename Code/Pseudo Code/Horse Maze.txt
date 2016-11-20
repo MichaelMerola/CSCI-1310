@@ -1,0 +1,39 @@
+
+object horse;
+
+maze [7][7] //matrix of 0,1 ; 0=wall
+wall = 1;
+
+int move; // variable that tells the horse how many spaces to move
+int direction; // 0=up 1=down 2=left 3=right
+
+int posX = horse.pos.x();
+int posY = horse.pos.y();
+
+int appX = 7;
+int appY = 7;
+
+bool wallUp;
+bool wallDown;
+bool wallLeft;
+bool wallRight;
+
+while (posX != 7 && posY != 7)
+{
+	movement(posX, posY);
+
+
+}
+
+
+void movement (int x, int y)
+{
+	if (posX < appX)
+		if maze[posX + 1][posY + 1] != wall
+			posX += 1;
+
+
+}
+
+
+

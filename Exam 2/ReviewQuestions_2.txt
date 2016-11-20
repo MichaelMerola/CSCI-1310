@@ -1,0 +1,60 @@
+class TransportationMode
+{
+    protected:
+        int wheels;
+        float mph;
+        
+    public:
+        TransportationMode()
+        {}
+        
+        float timeToDestination(float miles)
+        {
+            float time = miles / mph;
+            
+            return time;
+        }
+        
+        void sayModeOfTransportation()
+        {
+            cout << "I am traveling on an unknown mode of transportation." << endl;
+        }
+        
+        friend int getWheels(TransportationMode);
+};
+
+int getWheels(TransportationMode T)
+{
+    return T.wheels;
+}
+
+class Car:public TransportationMode
+{
+    public:
+        Car ()
+        {
+            wheels = 4;
+            mph = 60;
+        }
+        
+        void sayModeOfTransportation()
+        {
+            cout << "I am traveling in a car." << endl;
+        }
+        
+        
+};
+
+class Bike:public TransportationMode
+{
+    public:
+        Bike ()
+        {
+            wheels = 2;
+            mph = 15;
+        }
+        void sayModeOfTransportation()
+        {
+            cout << "I am traveling on a bike." << endl;
+        }
+};

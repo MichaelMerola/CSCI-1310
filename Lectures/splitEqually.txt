@@ -1,0 +1,32 @@
+int canSplitEqually(int arr[6]) {
+
+    int sizeOfArray = 6;
+    int splitPos = 0;
+    int i,j,sumRight,sumLeft;
+
+    while(splitPos<sizeOfArray) {
+
+        /* Reset sums for new iteration */
+        sumLeft = 0;
+        sumRight = 0;
+
+        /* Sum all the numbers on the left of split*/
+        for(i = 0; i < splitPos+1; i++)
+            sumLeft += arr[i];
+
+
+        /* Start summing right numbers from where i stopped (i.e. right of the split)*/
+        for(j = i; j < sizeOfArray; j++)
+            sumRight += arr[j];
+
+
+        /* Are the two sums equal? If yes then you found a split */
+        if(sumLeft==sumRight)
+        return 1;
+
+        splitPos++;
+
+    }
+
+    return 0;
+}

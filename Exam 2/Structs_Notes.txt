@@ -1,0 +1,106 @@
+#include <iostream>
+
+using namespace std;
+
+/* Create a struct data type. A struct is a collection of data elements grouped
+together to create a composite data type. The elements in the struct are called
+members. You create instances of the struct using its name as the type,
+
+such as WeatherData wd
+
+would create a variable called wd that is of type WeatherData.*/
+
+struct WeatherData{
+    double temperature;
+    double humidity;
+    double windVelocity;
+};
+
+//structs can have constructors though to pass initial values to the struct
+struct WeatherDataWConstructor{
+    double temperature;
+    double humidity;
+    double windVelocity;
+    WeatherDataWConstructor(double temp, double humid, double wind){
+        temperature = temp;
+        humidity = humid;
+        windVelocity = wind;
+    }
+    //create instance without values
+    //this is called the default constructor
+    WeatherDataWConstructor(){};
+};
+
+int main(){
+    /*C++ also uses objects, and another variable called a struct.
+     * Structs are similar to classes, but they
+    don't have any methods, only variables.
+    */
+
+    /*There is a struct declared outside of the main function, called
+     * WeatherData that contains a value for temperature, humidity, and
+     * windVelocity. We can create a WeatherData
+    variable as follows:
+    */
+    WeatherData dp1;
+    cout<<dp1.humidity<<endl;
+    cout<<dp1.temperature<<endl;
+    cout<<dp1.windVelocity<<endl;
+
+    dp1.humidity = 45;
+    dp1.temperature = 95;
+    dp1.windVelocity = 15;
+    /*The type is WeatherData and you can set individual values with the . notation.
+    The struct is a simpler data structure than the class. Nothing is private, there are
+    no methods, no getters and setters. But, it still provides functionality to group variables
+    together into one variable, and what gets put into that variable is the user's design.
+    */
+
+    cout<<"humidity:"<<dp1.humidity<<" temp:"<<dp1.temperature<<" wind:"<<dp1.windVelocity<<endl;
+
+    /*you can initialize the members of a struct by including a constructor. When you create
+    an instance of the struct variable, you pass values to the struct instance to set the member
+    values.*/
+    WeatherDataWConstructor wdwc(34, 45, 56);
+    cout<<"humidity:"<<wdwc.humidity<<" temp:"<<wdwc.temperature<<" wind:"<<wdwc.windVelocity<<endl;
+
+    /*To create an array of structs, you need the default constructor. Once you explicitly add a
+    constructor to a struct, you also need to add the default constructor. However, if you don't
+    crate a constructor, you get the default by default.*/
+    WeatherData wdArray[10];
+    WeatherDataWConstructor wdwcArray[10];
+    for(int i = 0; i < 10; i++){
+        cout<<"humidity:"<<wdArray[i].humidity<<" temp:"<<wdArray[i].temperature<<" wind:"<<wdArray[i].windVelocity<<endl;
+
+    }
+    for(int i = 0; i < 10; i++){
+        cout<<"humidity:"<<wdwcArray[i].humidity<<" temp:"<<wdwcArray[i].temperature<<" wind:"<<wdwcArray[i].windVelocity<<endl;
+
+    }
+    WeatherData wd2;
+    wd2.humidity = 50;
+    wd2.temperature = 100;
+    wd2.windVelocity = 0;
+    wdArray[9] = wd2;
+
+    wd2.humidity = 60;
+    wdArray[8] = wd2;
+
+    for(int i = 0; i < 10; i++){
+        cout<<"humidity:"<<wdArray[i].humidity<<" temp:"<<wdArray[i].temperature<<" wind:"<<wdArray[i].windVelocity<<endl;
+
+    }
+    //Exercise: create an array of structs
+    //Teams: string name, int wins, int losses
+    //assign some values to the data
+    //which team has the most wins, loses
+    //average wins, loses for all teams
+    /*Sample data:
+    LA Dodgers	    91	68	.572	-
+    San Francisco	84	75	.528	7.0
+    Colorado	    74	85	.465	17.0
+    San Diego	    68	91	.428	23.0
+    Arizona	        66	93	.415	25.0
+    */
+
+}

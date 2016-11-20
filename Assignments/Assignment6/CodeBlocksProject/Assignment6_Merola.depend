@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1476508355 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Assignment6/Assignment6_Merola/main.cpp
+	<iostream>
+	"WeatherForecaster.h"
+	<fstream>
+	<sstream>
+	<string>
+
+1476487127 /home/user/Dropbox/School/CSCI 1310/Assignments/Assignment6/Assignment6_Merola/WeatherForecaster.h
+	<iostream>
+
+1476510150 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Assignment6/Assignment6_Merola/WeatherForecaster.cpp
+	"WeatherForecaster.h"
+	<iostream>
+

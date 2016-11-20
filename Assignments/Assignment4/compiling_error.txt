@@ -1,0 +1,22 @@
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:71:23: warning: missing terminating " character
+   string unknownDNA = "CGCATTTTTGCCGGTTTTCCTTTGCTGTTTATTCATTT
+                       ^
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:71:3: error: missing terminating " character
+   string unknownDNA = "CGCATTTTTGCCGGTTTTCCTTTGCTGTTTATTCATTT
+   ^
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:76:69: warning: missing terminating " character
+   AGCACTGATGTGGAGTTTTCTTGTGGATATGAGCCATTCATAGTGTGGGATGTGCCATAGTTCATG";
+                                                                     ^
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:76:3: error: missing terminating " character
+   AGCACTGATGTGGAGTTTTCTTGTGGATATGAGCCATTCATAGTGTGGGATGTGCCATAGTTCATG";
+   ^
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp: In function 'int main()':
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:72:3: error: 'ATTTTAAACGATATTTATATCATCGGGTTTCATTCACTATTTTTCTTTTCGATAAATTT' was not declared in this scope
+   ATTTTAAACGATATTTATATCATCGGGTTTCATTCACTATTTTTCTTTTCGATAAATTT
+   ^
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:79:20: error: 'localSim' was not declared in this scope
+   double *score = &localSim;
+                    ^
+C:\Users\Michael Merola\Dropbox\School\CSCI 1310\Assignments\Assignment4_Merola.cpp:111:16: error: 'subStr' was not declared in this scope
+   getline(cin, subStr);
+                ^

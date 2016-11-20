@@ -1,0 +1,11 @@
+void printSeparation(string s, char c)
+{
+    stringstream SS;
+    SS << s; 			//put a string inside of the stream
+    string word;
+    while (getline(SS, word, c))//takes parameters: (STREAM, WORD TO PRINT TO, DELINETER)
+    {
+        cout << word << endl;
+    }
+}
+

@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1476673423 source:/home/user/Dropbox/CSCI1300Materials/Fall2016/Lectures/Lecture24-FriendFunctionsAndOperatorOverloading/main.cpp
+	<iostream>
+	"Date.h"
+	"Holiday.h"
+
+1476674114 /home/user/Dropbox/CSCI1300Materials/Fall2016/Lectures/Lecture24-FriendFunctionsAndOperatorOverloading/include/Date.h
+	<iostream>
+
+1476673097 source:/home/user/Dropbox/CSCI1300Materials/Fall2016/Lectures/Lecture24-FriendFunctionsAndOperatorOverloading/src/Date.cpp
+	"Date.h"
+	<iostream>
+	<sstream>
+
+1476670745 /home/user/Dropbox/CSCI1300Materials/Fall2016/Lectures/Lecture24-FriendFunctionsAndOperatorOverloading/include/Holiday.h
+	"Date.h"
+
+1476670730 source:/home/user/Dropbox/CSCI1300Materials/Fall2016/Lectures/Lecture24-FriendFunctionsAndOperatorOverloading/src/Holiday.cpp
+	<iostream>
+	"Holiday.h"
+	"Date.h"
+

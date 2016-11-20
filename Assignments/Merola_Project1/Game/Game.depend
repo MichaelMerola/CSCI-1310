@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1477647433 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/main.cpp
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<map>
+	"GM.h"
+	"Player.h"
+
+1477649564 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/GM.cpp
+	<iostream>
+	<stdlib.h>
+	<map>
+	"GM.h"
+	"Player.h"
+	"Enemy.h"
+
+1477649575 /home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/GM.h
+	<iostream>
+	"Player.h"
+
+1477644798 /home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/Player.h
+	<iostream>
+	"Enemy.h"
+
+1477647871 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/Player.cpp
+	<iostream>
+	"Player.h"
+	"GM.h"
+
+1477648970 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/Enemy.cpp
+	<iostream>
+	"Player.h"
+	"GM.h"
+	"Enemy.h"
+
+1477649253 /home/user/Dropbox/School/CSCI 1310/Assignments/Project1/Game/Enemy.h
+	<iostream>
+
+1477648970 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/Enemy.cpp
+	<iostream>
+	"Player.h"
+	"GM.h"
+	"Enemy.h"
+
+1477644798 /home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/Player.h
+	<iostream>
+	"Enemy.h"
+
+1477649253 /home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/Enemy.h
+	<iostream>
+
+1477649575 /home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/GM.h
+	<iostream>
+	"Player.h"
+
+1477650099 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/GM.cpp
+	<iostream>
+	<stdlib.h>
+	<map>
+	"GM.h"
+	"Player.h"
+	"Enemy.h"
+
+1477647433 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/main.cpp
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<map>
+	"GM.h"
+	"Player.h"
+
+1477647871 source:/home/user/Dropbox/School/CSCI 1310/Assignments/Merola_Project1/Game/Player.cpp
+	<iostream>
+	"Player.h"
+	"GM.h"
+
