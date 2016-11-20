@@ -1,6 +1,0 @@
-Hello World
-Inventory List
-Mats: 39.95
-Bulbs: 3.22
-Fuses: 1.08
-another line in the file
