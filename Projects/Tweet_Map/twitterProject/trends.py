@@ -41,7 +41,8 @@ class SentimentAnalysis:
 			closestState = " "
 			sentScore = 0
 			count = 1
-
+			
+			#find closest state
 			for state in self.states:
 				dist = tweetGeo.distance(state.centroid())
 				if shortDist == -1:
@@ -52,15 +53,14 @@ class SentimentAnalysis:
 					shortDist = dist
 					closestState = state.abbrev()
 
-
+			#find sentiment within tweet
 			for word in tweetTxt:
 				if word in self.sentiments:
 					sentScore += self.sentiments[word]
 					count += 1
-
-			#print closestState
+			
+			#calculate avg score and store it in the sentiment list for that state
 			avgScore = sentScore/count
-			#print avgScore
 
 			self.setSentiment(closestState, avgScore)
 		'''end for'''
@@ -79,7 +79,8 @@ if __name__ == "__main__":
 		print "error: no query"
 		
 	sa = SentimentAnalysis()
-
+	
+	#analyze tweet data from four data files with time
 	fileName = "tweets_with_time.json"
 	sa.analyzeData(fileName, query)
 	print "Loading DataSet1..."
