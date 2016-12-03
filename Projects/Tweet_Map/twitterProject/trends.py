@@ -29,8 +29,9 @@ class SentimentAnalysis:
 			tweetMessage = rawTweetData["text"]
 			tweetTime = rawTweetData["created_at"]
 			tweetLocation = GeoPosition(rawTweetData['coordinates'][1], rawTweetData['coordinates'][0])
-			if (query in tweetMessage):
-				tweetLibrary.append(Tweet(tweetMessage, tweetTime, tweetLocation))
+			for element in query:
+				if (element in tweetMessage):
+					tweetLibrary.append(Tweet(tweetMessage, tweetTime, tweetLocation))
 		'''end import for'''
 
 		#parse through every tweet to get a sentiment score
@@ -73,8 +74,8 @@ class SentimentAnalysis:
 
 if __name__ == "__main__":
 	if len(sys.argv) > 1:
-		query = ' '.join(sys.argv[1:])
-		print "Search Query: " + query + "\n"
+		query = sys.argv[1:]
+		print "Searching Query...\n"
 	else:
 		print "error: no query"
 		
